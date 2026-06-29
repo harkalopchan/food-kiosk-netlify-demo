@@ -8,6 +8,7 @@
     <meta name="description"
         content="A simple food kiosk landing page demo deployed on Netlify with CMS-ready content structure." />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -111,6 +112,17 @@
         <p>© 2026 KioskBites Demo. Built for Netlify deployment reference.</p>
     </footer>
 
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
     <script src="./script.js"></script>
 </body>
 
