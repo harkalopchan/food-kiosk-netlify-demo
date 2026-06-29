@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: Food Kiosk
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
