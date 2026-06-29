@@ -1,0 +1,19 @@
+{
+    "items": [
+      {
+        "name": "Chicken Rice Bowl",
+        "description": "Tender chicken served with fragrant rice and house sauce.",
+        "price": "SGD 8.90"
+      },
+      {
+        "name": "Spicy Noodle Box",
+        "description": "Wok-style noodles with vegetables and chilli garlic sauce.",
+        "price": "SGD 7.90"
+      },
+      {
+        "name": "Crispy Veg Bites",
+        "description": "Golden vegetarian bites served with signature dipping sauce.",
+        "price": "SGD 5.90"
+      }
+    ]
+  }

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food Kiosk Demo | Netlify CMS Demo</title>
+    <meta name="description"
+        content="A simple food kiosk landing page demo deployed on Netlify with CMS-ready content structure." />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="/" class="logo">Kiosk<span>Bites</span></a>
+
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow" id="hero-eyebrow">Opening August 2026</p>
+                <h1 id="hero-title">Fresh Asian Street Food in Singapore</h1>
+                <p id="hero-description">
+                    A simple food kiosk demo website built with HTML, CSS, JavaScript,
+                    Netlify Forms, and CMS-ready content.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="button">View Menu</a>
+                    <a href="#contact" class="button button-secondary">Contact Us</a>
+                </div>
+
+                <div class="social-links">
+                    <a id="instagram-link" href="#" target="_blank" rel="noreferrer">
+                        Instagram
+                    </a>
+                    <a id="tiktok-link" href="#" target="_blank" rel="noreferrer">
+                        TikTok
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card" aria-label="Featured food card">
+                <div class="food-image-placeholder">🍜</div>
+                <h2>Signature Bowl</h2>
+                <p>Fresh, fast, and full of flavour.</p>
+            </div>
+        </section>
+
+        <section class="section" id="menu">
+            <div class="section-header">
+                <p class="eyebrow">Menu</p>
+                <h2>Popular Items</h2>
+                <p>
+                    Menu items and prices are loaded from a JSON content file, similar
+                    to how a static CMS-managed site can work.
+                </p>
+            </div>
+
+            <div class="menu-grid" id="menu-list"></div>
+        </section>
+
+        <section class="section about" id="about">
+            <div>
+                <p class="eyebrow">About</p>
+                <h2 id="about-title">Built for quick launch</h2>
+                <p id="about-description">
+                    This demo shows a clean static site workflow suitable for Netlify
+                    deployment and content management setup.
+                </p>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="section-header">
+                <p class="eyebrow">Contact</p>
+                <h2>Send a Message</h2>
+                <p>This form uses Netlify Forms style markup.</p>
+            </div>
+
+            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                <input type="hidden" name="form-name" value="contact" />
+
+                <label>
+                    Name
+                    <input type="text" name="name" required />
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" required />
+                </label>
+
+                <label>
+                    Message
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 KioskBites Demo. Built for Netlify deployment reference.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
