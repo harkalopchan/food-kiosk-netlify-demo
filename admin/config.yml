@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: harkalopchan/food-kiosk-netlify-demo
   branch: main
 
 media_folder: "assets/uploads"
